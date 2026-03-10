@@ -131,11 +131,11 @@ conduxt doesn't reinvent the wheel. It composes existing OpenClaw community Skil
 
 | Skill | Role |
 |-------|------|
-| [`coding-agent`](https://github.com/openclaw/openclaw-skills) | Agent lifecycle management (tmux backend) |
-| [`tmux`](https://github.com/openclaw/openclaw-skills) | Low-level tmux operations |
-| [`tmux-agents`](https://github.com/openclaw/openclaw-skills) | Multi-agent types (Codex, Gemini, local) |
-| [`gemini`](https://github.com/openclaw/openclaw-skills) | Gemini CLI for long-context coding |
-| [`resilient-coding-agent`](https://github.com/openclaw/openclaw-skills) | Gateway restart recovery |
+| [`coding-agent`](https://clawhub.com) | Agent lifecycle management (tmux backend) |
+| [`tmux`](https://clawhub.com) | Low-level tmux operations |
+| [`tmux-agents`](https://clawhub.com) | Multi-agent types (Codex, Gemini, local) |
+| [`gemini`](https://clawhub.com) | Gemini CLI for long-context coding |
+| [`resilient-coding-agent`](https://clawhub.com) | Gateway restart recovery |
 
 When using the ACPX backend, these tmux-based Skills are bypassed in favor of direct `acpx` commands.
 
