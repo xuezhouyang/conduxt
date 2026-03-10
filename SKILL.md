@@ -7,6 +7,8 @@ description: >
   Use when: "implement feature X", "fix this bug", "refactor the API layer",
   "start agent", "open a session", "code this", "fix issue #N".
 user-invocable: true
+homepage: https://github.com/xuezhouyang/conduxt
+metadata: {"openclaw": {"emoji": "🎛️", "requires": {"bins": ["git", "jq"], "anyBins": ["acpx", "tmux"]}, "os": ["darwin", "linux"]}}
 ---
 
 # CLI Coding Orchestrator
