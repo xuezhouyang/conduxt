@@ -486,7 +486,7 @@ Parameters:
 ```
 Phase 1 (Current): ACPX and tmux in parallel
   • New tasks prefer ACPX
-  • Legacy tasks or ACPX instability → tmux
+  • ACPX instability → tmux fallback
   • Validate ACPX session persistence and crash recovery
 
 Phase 2: High-value migration
@@ -496,14 +496,13 @@ Phase 2: High-value migration
 Phase 3 (End state): ACPX as primary path
   • tmux optional (visual only)
   • ACPX becomes the standard interface for all agent communication
-  • Requires ACPX >= v0.2 with wire format aligned to standard ACP
 ```
 
 ---
 
 ## 13. Important Notes
 
-1. **ACPX version risk**: Currently v0.1.x, may have breaking changes. Fall back to tmux immediately on issues.
+1. **ACPX stability**: ACPX is still early-stage and may have breaking changes. Fall back to tmux immediately on issues.
 2. **No PTY nesting**: Do NOT start tmux inside `exec pty:true` (double PTY allocation)
 3. **tmux send-keys timing**: When agent is busy, send `Escape` first and wait for idle before appending
 4. **Don't pull full logs**: Use capture-pane `-S -20`, ACPX use `--format json` pipe

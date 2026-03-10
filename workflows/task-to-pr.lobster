@@ -10,7 +10,7 @@ name: task-to-pr
 description: >
   End-to-end workflow: parse task → create branch → launch coding agent
   (ACPX or tmux) → verify tests → create PR → notify user.
-version: "0.2.0"
+version: "1.0.0"
 
 # ---------------------------------------------------------------------------
 # Input Parameters

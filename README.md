@@ -18,7 +18,7 @@ conduxt is an [OpenClaw](https://github.com/openclaw/openclaw) Skill that turns 
 - **Structured callback contract** — Agent outputs `callback-json` block on completion. Routing is pure if/else, no LLM interpretation needed.
 - **Zero-token background watchdog** — Shell-based monitoring that consumes no LLM tokens. Detects crashes, stalls, and milestones.
 - **OpenClaw Skill composability** — Builds on community Skills (`coding-agent`, `tmux`, `gemini`, `resilient-coding-agent`) instead of reinventing them.
-- **Parallel multi-agent** — Run multiple named sessions concurrently *(v0.3, coming soon)*.
+- **Parallel multi-agent** — Run multiple named sessions concurrently.
 
 ## Architecture — Dual-Backend (ACPX + tmux)
 
@@ -157,10 +157,9 @@ When using the ACPX backend, these tmux-based Skills are bypassed in favor of di
 
 | Version | Goal | Status |
 |---------|------|--------|
-| v0.1 | Single agent, human-in-the-loop (tmux) | Done |
-| v0.2 | Dual-backend composable Playbook | **Current** |
-| v0.3 | Full task automation + parallel multi-agent | Planned |
-| v0.4 | Lobster deterministic workflow + approval gates | Planned |
+| v1.0 | Dual-backend composable Playbook (ACPX + tmux) | **Current** |
+| v1.1 | Full task automation + parallel multi-agent | Planned |
+| v1.2 | Lobster deterministic workflow + approval gates | Planned |
 
 ## Contributing
 
